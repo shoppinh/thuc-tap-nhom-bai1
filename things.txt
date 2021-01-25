@@ -1,0 +1,18 @@
+gửi bài -> duyệt bài ->
+lọc theo chủ đề
+sắp xếp theo ngày tháng tạo
+tính năng xét tin nóng
+chỉnh sửa ô nhập của content và description
+upload ảnh
+viet lai ham close connection va return null
+
+cach su dung log4j
+
+//////////////////////////////////////////////////
+
+-tao restfulapi(example) voi servlet
+- vuejs
+- dung jdblc
+- co su dung log4j
+- tim hieu cach su dung try catch
+- khi update hoac insert loi thi hien loi o dau
