@@ -28,22 +28,23 @@
         /// </summary>
         private void InitializeComponent()
         {
-            this.txbTenDangNhap = new System.Windows.Forms.TextBox();
+            this.txbTenTruyCap = new System.Windows.Forms.TextBox();
             this.txbMatKhau = new System.Windows.Forms.TextBox();
             this.lbTenTruyCap = new System.Windows.Forms.Label();
             this.lbMatKhau = new System.Windows.Forms.Label();
             this.btnDangNhap = new System.Windows.Forms.Button();
             this.btnThoat = new System.Windows.Forms.Button();
-            this.btnDangKy = new System.Windows.Forms.Button();
+            this.lilbHuongDan = new System.Windows.Forms.LinkLabel();
+            this.lilbTaiKhoan = new System.Windows.Forms.LinkLabel();
             this.SuspendLayout();
             // 
-            // txbTenDangNhap
+            // txbTenTruyCap
             // 
-            this.txbTenDangNhap.Font = new System.Drawing.Font("Microsoft Sans Serif", 9F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.txbTenDangNhap.Location = new System.Drawing.Point(375, 175);
-            this.txbTenDangNhap.Name = "txbTenDangNhap";
-            this.txbTenDangNhap.Size = new System.Drawing.Size(214, 24);
-            this.txbTenDangNhap.TabIndex = 0;
+            this.txbTenTruyCap.Font = new System.Drawing.Font("Microsoft Sans Serif", 9F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.txbTenTruyCap.Location = new System.Drawing.Point(375, 175);
+            this.txbTenTruyCap.Name = "txbTenTruyCap";
+            this.txbTenTruyCap.Size = new System.Drawing.Size(214, 24);
+            this.txbTenTruyCap.TabIndex = 0;
             // 
             // txbMatKhau
             // 
@@ -82,6 +83,7 @@
             this.btnDangNhap.TabIndex = 2;
             this.btnDangNhap.Text = "Đăng nhập";
             this.btnDangNhap.UseVisualStyleBackColor = true;
+            this.btnDangNhap.Click += new System.EventHandler(this.btnDangNhap_Click);
             // 
             // btnThoat
             // 
@@ -91,29 +93,49 @@
             this.btnThoat.TabIndex = 3;
             this.btnThoat.Text = "Thoát";
             this.btnThoat.UseVisualStyleBackColor = true;
+            this.btnThoat.Click += new System.EventHandler(this.btnThoat_Click);
             // 
-            // btnDangKy
+            // lilbHuongDan
             // 
-            this.btnDangKy.Location = new System.Drawing.Point(775, 12);
-            this.btnDangKy.Name = "btnDangKy";
-            this.btnDangKy.Size = new System.Drawing.Size(127, 29);
-            this.btnDangKy.TabIndex = 4;
-            this.btnDangKy.Text = "Đăng ký";
-            this.btnDangKy.UseVisualStyleBackColor = true;
+            this.lilbHuongDan.AutoSize = true;
+            this.lilbHuongDan.Font = new System.Drawing.Font("Microsoft Sans Serif", 9F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.lilbHuongDan.Location = new System.Drawing.Point(844, 24);
+            this.lilbHuongDan.Name = "lilbHuongDan";
+            this.lilbHuongDan.Size = new System.Drawing.Size(46, 18);
+            this.lilbHuongDan.TabIndex = 5;
+            this.lilbHuongDan.TabStop = true;
+            this.lilbHuongDan.Text = "About";
+            this.lilbHuongDan.LinkClicked += new System.Windows.Forms.LinkLabelLinkClickedEventHandler(this.lilbHuongDan_LinkClicked);
+            // 
+            // lilbTaiKhoan
+            // 
+            this.lilbTaiKhoan.AutoSize = true;
+            this.lilbTaiKhoan.Font = new System.Drawing.Font("Microsoft Sans Serif", 9F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.lilbTaiKhoan.Location = new System.Drawing.Point(719, 24);
+            this.lilbTaiKhoan.Name = "lilbTaiKhoan";
+            this.lilbTaiKhoan.Size = new System.Drawing.Size(73, 18);
+            this.lilbTaiKhoan.TabIndex = 6;
+            this.lilbTaiKhoan.TabStop = true;
+            this.lilbTaiKhoan.Text = "Tài khoản";
+            this.lilbTaiKhoan.LinkClicked += new System.Windows.Forms.LinkLabelLinkClickedEventHandler(this.lilbTaiKhoan_LinkClicked);
             // 
             // frmDangNhap
             // 
+            this.AcceptButton = this.btnDangNhap;
             this.AutoScaleDimensions = new System.Drawing.SizeF(8F, 16F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
+            this.CancelButton = this.btnThoat;
             this.ClientSize = new System.Drawing.Size(1006, 636);
+            this.Controls.Add(this.lilbTaiKhoan);
+            this.Controls.Add(this.lilbHuongDan);
             this.Controls.Add(this.btnThoat);
-            this.Controls.Add(this.btnDangKy);
             this.Controls.Add(this.btnDangNhap);
             this.Controls.Add(this.lbMatKhau);
             this.Controls.Add(this.lbTenTruyCap);
             this.Controls.Add(this.txbMatKhau);
-            this.Controls.Add(this.txbTenDangNhap);
+            this.Controls.Add(this.txbTenTruyCap);
             this.Name = "frmDangNhap";
+            this.StartPosition = System.Windows.Forms.FormStartPosition.CenterScreen;
             this.Text = "Đăng nhập";
             this.ResumeLayout(false);
             this.PerformLayout();
@@ -122,13 +144,14 @@
 
         #endregion
 
-        private System.Windows.Forms.TextBox txbTenDangNhap;
+        private System.Windows.Forms.TextBox txbTenTruyCap;
         private System.Windows.Forms.TextBox txbMatKhau;
         private System.Windows.Forms.Label lbTenTruyCap;
         private System.Windows.Forms.Label lbMatKhau;
         private System.Windows.Forms.Button btnDangNhap;
         private System.Windows.Forms.Button btnThoat;
-        private System.Windows.Forms.Button btnDangKy;
+        private System.Windows.Forms.LinkLabel lilbHuongDan;
+        private System.Windows.Forms.LinkLabel lilbTaiKhoan;
     }
 }
 
