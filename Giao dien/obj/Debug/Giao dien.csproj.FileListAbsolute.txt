@@ -8,3 +8,13 @@ E:\Thực tập nhóm\Giao dien\obj\Debug\Giao dien.csproj.GenerateResource.cach
 E:\Thực tập nhóm\Giao dien\obj\Debug\Giao dien.csproj.CoreCompileInputs.cache
 E:\Thực tập nhóm\Giao dien\obj\Debug\Giao dien.exe
 E:\Thực tập nhóm\Giao dien\obj\Debug\Giao dien.pdb
+C:\Users\Admin\Documents\GitHub Projects\thuc-tap-nhom-bai1\Giao dien\obj\Debug\Giao dien.csprojAssemblyReference.cache
+C:\Users\Admin\Documents\GitHub Projects\thuc-tap-nhom-bai1\Giao dien\obj\Debug\Giao_dien.frmDangNhap.resources
+C:\Users\Admin\Documents\GitHub Projects\thuc-tap-nhom-bai1\Giao dien\obj\Debug\Giao dien.csproj.GenerateResource.cache
+C:\Users\Admin\Documents\GitHub Projects\thuc-tap-nhom-bai1\Giao dien\obj\Debug\Giao dien.exe
+C:\Users\Admin\Documents\GitHub Projects\thuc-tap-nhom-bai1\Giao dien\obj\Debug\Giao dien.pdb
+C:\Users\Admin\Documents\GitHub Projects\thuc-tap-nhom-bai1\Giao dien\bin\Debug\Giao dien.exe.config
+C:\Users\Admin\Documents\GitHub Projects\thuc-tap-nhom-bai1\Giao dien\bin\Debug\Giao dien.exe
+C:\Users\Admin\Documents\GitHub Projects\thuc-tap-nhom-bai1\Giao dien\bin\Debug\Giao dien.pdb
+C:\Users\Admin\Documents\GitHub Projects\thuc-tap-nhom-bai1\Giao dien\obj\Debug\Giao_dien.Properties.Resources.resources
+C:\Users\Admin\Documents\GitHub Projects\thuc-tap-nhom-bai1\Giao dien\obj\Debug\Giao dien.csproj.CoreCompileInputs.cache

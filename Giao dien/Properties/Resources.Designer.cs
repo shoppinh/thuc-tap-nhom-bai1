@@ -59,15 +59,5 @@ namespace Giao_dien.Properties {
                 resourceCulture = value;
             }
         }
-        
-        /// <summary>
-        ///   Looks up a localized resource of type System.Drawing.Bitmap.
-        /// </summary>
-        internal static System.Drawing.Bitmap logo_quản_lý_nhân_sự {
-            get {
-                object obj = ResourceManager.GetObject("logo quản lý nhân sự", resourceCulture);
-                return ((System.Drawing.Bitmap)(obj));
-            }
-        }
     }
 }
