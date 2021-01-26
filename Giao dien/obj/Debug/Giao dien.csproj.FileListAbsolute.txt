@@ -9,3 +9,14 @@ E:\Thực tập nhóm\Giao dien\obj\Debug\Giao dien.exe
 E:\Thực tập nhóm\Giao dien\obj\Debug\Giao dien.pdb
 E:\Thực tập nhóm\Giao dien\obj\Debug\Giao_dien.frmDangNhap.resources
 E:\Thực tập nhóm\Giao dien\obj\Debug\Giao_dien.frmQuanLy.resources
+C:\Users\HP\Desktop\GIT\thuc-tap-nhom-bai1\Giao dien\bin\Debug\Giao dien.exe.config
+C:\Users\HP\Desktop\GIT\thuc-tap-nhom-bai1\Giao dien\bin\Debug\Giao dien.exe
+C:\Users\HP\Desktop\GIT\thuc-tap-nhom-bai1\Giao dien\bin\Debug\Giao dien.pdb
+C:\Users\HP\Desktop\GIT\thuc-tap-nhom-bai1\Giao dien\obj\Debug\Giao dien.csprojAssemblyReference.cache
+C:\Users\HP\Desktop\GIT\thuc-tap-nhom-bai1\Giao dien\obj\Debug\Giao_dien.frmDangNhap.resources
+C:\Users\HP\Desktop\GIT\thuc-tap-nhom-bai1\Giao dien\obj\Debug\Giao_dien.Properties.Resources.resources
+C:\Users\HP\Desktop\GIT\thuc-tap-nhom-bai1\Giao dien\obj\Debug\Giao_dien.frmQuanLy.resources
+C:\Users\HP\Desktop\GIT\thuc-tap-nhom-bai1\Giao dien\obj\Debug\Giao dien.csproj.GenerateResource.cache
+C:\Users\HP\Desktop\GIT\thuc-tap-nhom-bai1\Giao dien\obj\Debug\Giao dien.csproj.CoreCompileInputs.cache
+C:\Users\HP\Desktop\GIT\thuc-tap-nhom-bai1\Giao dien\obj\Debug\Giao dien.exe
+C:\Users\HP\Desktop\GIT\thuc-tap-nhom-bai1\Giao dien\obj\Debug\Giao dien.pdb
