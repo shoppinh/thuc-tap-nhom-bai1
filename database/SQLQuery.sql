@@ -7,12 +7,6 @@ create table PHONGBAN (
 	NgayNhanChuc datetime default (getdate())
 )
 
-create table DUAN (
-	MaDA char(10) primary key,
-	TenDA nvarchar(45) not null,
-	MaPB char(10) references PHONGBAN(MaPB)
-)
-
 create table NHANVIEN (
 	MaNV char(10) primary key,
 	TenNV nvarchar(45),
@@ -22,11 +16,4 @@ create table NHANVIEN (
 	Luong int default(10000000),
 	MaNGS char(10),
 	MaPB char(10) references PHONGBAN(MaPB)
-)
-
-create table PHANCONG (
-	MaNV char(10) references NHANVIEN(MaNV),
-	MaDA char(10) references DUAN(MaDA),
-	SoGio decimal(3,1),
-	primary key(MaNV, MaDA)
 )
