@@ -20,3 +20,15 @@ E:\Thực tập nhóm\thuc-tap-nhom-bai1\Giao dien\obj\Debug\Giao dien.csproj.Ge
 E:\Thực tập nhóm\thuc-tap-nhom-bai1\Giao dien\obj\Debug\Giao dien.csproj.CoreCompileInputs.cache
 E:\Thực tập nhóm\thuc-tap-nhom-bai1\Giao dien\obj\Debug\Giao dien.exe
 E:\Thực tập nhóm\thuc-tap-nhom-bai1\Giao dien\obj\Debug\Giao dien.pdb
+D:\TTN-1\thuc-tap-nhom-bai1\Giao dien\bin\Debug\Giao dien.exe.config
+D:\TTN-1\thuc-tap-nhom-bai1\Giao dien\bin\Debug\Giao dien.exe
+D:\TTN-1\thuc-tap-nhom-bai1\Giao dien\bin\Debug\Giao dien.pdb
+D:\TTN-1\thuc-tap-nhom-bai1\Giao dien\obj\Debug\Giao dien.csprojAssemblyReference.cache
+D:\TTN-1\thuc-tap-nhom-bai1\Giao dien\obj\Debug\Giao_dien.frmDangNhap.resources
+D:\TTN-1\thuc-tap-nhom-bai1\Giao dien\obj\Debug\Giao_dien.Properties.Resources.resources
+D:\TTN-1\thuc-tap-nhom-bai1\Giao dien\obj\Debug\Giao_dien.frmQuanLy.resources
+D:\TTN-1\thuc-tap-nhom-bai1\Giao dien\obj\Debug\Giao dien.csproj.GenerateResource.cache
+D:\TTN-1\thuc-tap-nhom-bai1\Giao dien\obj\Debug\Giao dien.csproj.CoreCompileInputs.cache
+D:\TTN-1\thuc-tap-nhom-bai1\Giao dien\obj\Debug\Giao dien.exe
+D:\TTN-1\thuc-tap-nhom-bai1\Giao dien\obj\Debug\Giao dien.pdb
+D:\TTN-1\thuc-tap-nhom-bai1\Giao dien\obj\Debug\Giao_dien.frmThemNV.resources
