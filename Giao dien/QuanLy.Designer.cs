@@ -30,7 +30,6 @@
         {
             this.dataGridView1 = new System.Windows.Forms.DataGridView();
             this.btnThem = new System.Windows.Forms.Button();
-            this.btnSua = new System.Windows.Forms.Button();
             this.btnXoa = new System.Windows.Forms.Button();
             this.txbTimKiem = new System.Windows.Forms.TextBox();
             this.btnTimKiem = new System.Windows.Forms.Button();
@@ -53,7 +52,7 @@
             // 
             // btnThem
             // 
-            this.btnThem.Location = new System.Drawing.Point(98, 428);
+            this.btnThem.Location = new System.Drawing.Point(106, 428);
             this.btnThem.Margin = new System.Windows.Forms.Padding(2);
             this.btnThem.Name = "btnThem";
             this.btnThem.Size = new System.Drawing.Size(73, 36);
@@ -62,19 +61,9 @@
             this.btnThem.UseVisualStyleBackColor = true;
             this.btnThem.Click += new System.EventHandler(this.btnThem_Click);
             // 
-            // btnSua
-            // 
-            this.btnSua.Location = new System.Drawing.Point(335, 428);
-            this.btnSua.Margin = new System.Windows.Forms.Padding(2);
-            this.btnSua.Name = "btnSua";
-            this.btnSua.Size = new System.Drawing.Size(73, 36);
-            this.btnSua.TabIndex = 1;
-            this.btnSua.Text = "Sửa";
-            this.btnSua.UseVisualStyleBackColor = true;
-            // 
             // btnXoa
             // 
-            this.btnXoa.Location = new System.Drawing.Point(599, 428);
+            this.btnXoa.Location = new System.Drawing.Point(748, 428);
             this.btnXoa.Margin = new System.Windows.Forms.Padding(2);
             this.btnXoa.Name = "btnXoa";
             this.btnXoa.Size = new System.Drawing.Size(73, 36);
@@ -94,7 +83,7 @@
             // 
             // btnTimKiem
             // 
-            this.btnTimKiem.Location = new System.Drawing.Point(526, 42);
+            this.btnTimKiem.Location = new System.Drawing.Point(519, 43);
             this.btnTimKiem.Margin = new System.Windows.Forms.Padding(2);
             this.btnTimKiem.Name = "btnTimKiem";
             this.btnTimKiem.Size = new System.Drawing.Size(65, 20);
@@ -110,7 +99,7 @@
             "Tên nhân viên",
             "Mã phòng ban",
             "Tên phòng ban"});
-            this.comboTimKiem.Location = new System.Drawing.Point(44, 42);
+            this.comboTimKiem.Location = new System.Drawing.Point(50, 42);
             this.comboTimKiem.Margin = new System.Windows.Forms.Padding(2);
             this.comboTimKiem.Name = "comboTimKiem";
             this.comboTimKiem.Size = new System.Drawing.Size(92, 21);
@@ -119,7 +108,7 @@
             // btn2Thoat
             // 
             this.btn2Thoat.DialogResult = System.Windows.Forms.DialogResult.Cancel;
-            this.btn2Thoat.Location = new System.Drawing.Point(740, 41);
+            this.btn2Thoat.Location = new System.Drawing.Point(812, 41);
             this.btn2Thoat.Margin = new System.Windows.Forms.Padding(2);
             this.btn2Thoat.Name = "btn2Thoat";
             this.btn2Thoat.Size = new System.Drawing.Size(65, 20);
@@ -137,7 +126,6 @@
             this.Controls.Add(this.comboTimKiem);
             this.Controls.Add(this.txbTimKiem);
             this.Controls.Add(this.btnXoa);
-            this.Controls.Add(this.btnSua);
             this.Controls.Add(this.btn2Thoat);
             this.Controls.Add(this.btnTimKiem);
             this.Controls.Add(this.btnThem);
@@ -157,7 +145,6 @@
 
         private System.Windows.Forms.DataGridView dataGridView1;
         private System.Windows.Forms.Button btnThem;
-        private System.Windows.Forms.Button btnSua;
         private System.Windows.Forms.Button btnXoa;
         private System.Windows.Forms.TextBox txbTimKiem;
         private System.Windows.Forms.Button btnTimKiem;
