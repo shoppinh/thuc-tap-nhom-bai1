@@ -7,6 +7,7 @@ using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
 using System.Windows.Forms;
+using System.Data.SqlClient;
 
 namespace Giao_dien
 {
@@ -69,6 +70,19 @@ namespace Giao_dien
         {
             new frmThemNV(null).ShowDialog();
             LoadDSNV();
+        }
+
+        private void btnXoa_Click(object sender, EventArgs e)
+        {
+            //foreach (DataGridViewRow item in this.dataGridView1.SelectedRows)
+            //{
+            //    dataGridView1.Rows.RemoveAt(item.Index);
+            //}
+
+            var db = new Database();
+            db.del_data(dataGridView1.CurrentRow.Cells["MaNV"].Value.ToString());
+            LoadDSNV();
+
         }
     }
 }

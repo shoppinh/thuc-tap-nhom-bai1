@@ -11,7 +11,7 @@ namespace Giao_dien
 {
     public class Database
     {
-        private string connectionString = @"Data Source = DESKTOP-P5SQIP5; Initial Catalog = TT_Nhom1; Integrated Security = True ";
+        private string connectionString = @"Data Source=LAPCUATUNG\SQLEXPRESS;Initial Catalog=TT_Nhom1;Integrated Security=True";
         private SqlConnection conn;
 
         //private string sql;
@@ -102,6 +102,29 @@ namespace Giao_dien
             {
                 conn.Close();
             }
+        }
+
+
+        public Boolean del_data(String manv)
+        {
+            bool check = false;
+            try
+            {
+                conn.Open();
+                string sql = "DELETE From NHANVIEN where MaNV = '"+manv+"'"  ;
+                SqlCommand cmd = new SqlCommand(sql, conn);
+                cmd.ExecuteNonQuery();
+                check = true;
+                conn.Close();
+            }
+            catch (Exception)
+            {
+                check = false;
+                throw;
+            }
+            
+
+            return check;
         }
     }
 }
