@@ -11,7 +11,7 @@ namespace Giao_dien
 {
     public class Database
     {
-        private string connectionString = @"Data Source=LAPCUATUNG\SQLEXPRESS;Initial Catalog=TT_Nhom1;Integrated Security=True";
+        private string connectionString = @"Data Source=localhost\SQLEXPRESS;Initial Catalog=TT_Nhom1;Integrated Security=True";
         private SqlConnection conn;
 
         //private string sql;
