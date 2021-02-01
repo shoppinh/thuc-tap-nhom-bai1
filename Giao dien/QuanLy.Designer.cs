@@ -99,7 +99,7 @@
             this.comboTimKiem.Location = new System.Drawing.Point(67, 51);
             this.comboTimKiem.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
             this.comboTimKiem.Name = "comboTimKiem";
-            this.comboTimKiem.Size = new System.Drawing.Size(121, 24);
+            this.comboTimKiem.Size = new System.Drawing.Size(134, 24);
             this.comboTimKiem.TabIndex = 4;
             // 
             // btn2Thoat
