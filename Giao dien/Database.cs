@@ -127,7 +127,7 @@ namespace Giao_dien
             return check;
         }
 
-        public DataTable SearchData(string sql)
+        public DataTable SearchData(string sql,int indexkeysearch,string valuesearch)
         {
             try
             {
@@ -136,9 +136,31 @@ namespace Giao_dien
                 //sql = "exec SelectAllNV";
 
                 cmd = new SqlCommand(sql, conn);
+                cmd.CommandType = CommandType.StoredProcedure;
+                if (indexkeysearch == 0)
+                {
+                    cmd.Parameters.Add("@MaNV", SqlDbType.Char).Value = valuesearch;
+                }else if (indexkeysearch == 1)
+                {
+                    cmd.Parameters.Add("@TenNV", SqlDbType.NVarChar).Value = valuesearch;
+                }else if (indexkeysearch == 2)
+                {
+                    cmd.Parameters.Add("@TenPB", SqlDbType.NVarChar).Value = valuesearch;
+                }
                 dt = new DataTable();
-                dt.Load(cmd.ExecuteReader());
-                return dt;
+                SqlDataReader reader = cmd.ExecuteReader();
+                if (reader.HasRows)
+                {
+                    dt.Load(reader);
+                    return dt;
+                }
+                else
+                {
+                    dt = null;
+                    return dt;
+                }
+                //dt.Load(cmd.ExecuteReader());
+                //return dt;
             }
             catch (Exception ex)
             {

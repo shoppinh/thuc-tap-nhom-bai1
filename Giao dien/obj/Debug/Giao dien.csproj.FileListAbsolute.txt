@@ -56,4 +56,4 @@ E:\1 school\1 ki 6\TT NHom\thuc-tap-nhom-bai1\Giao dien\obj\Debug\Giao dien.cspr
 E:\1 school\1 ki 6\TT NHom\thuc-tap-nhom-bai1\Giao dien\obj\Debug\Giao dien.csproj.CoreCompileInputs.cache
 E:\1 school\1 ki 6\TT NHom\thuc-tap-nhom-bai1\Giao dien\obj\Debug\Giao dien.exe
 E:\1 school\1 ki 6\TT NHom\thuc-tap-nhom-bai1\Giao dien\obj\Debug\Giao dien.pdb
-E:\1 school\1 ki 6\TT NHom\thuc-tap-nhom-bai1\Giao dien\obj\Debug\Giao_dien.SearchOut.resources
+E:\1 school\1 ki 6\TT NHom\thuc-tap-nhom-bai1\Giao dien\obj\Debug\Giao_dien.frmSearchOut.resources

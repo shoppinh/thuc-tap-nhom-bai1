@@ -1,7 +1,7 @@
 ﻿
 namespace Giao_dien
 {
-    partial class SearchOut
+    partial class frmSearchOut
     {
         /// <summary>
         /// Required designer variable.
@@ -43,14 +43,15 @@ namespace Giao_dien
             this.dataGridView1.Size = new System.Drawing.Size(599, 315);
             this.dataGridView1.TabIndex = 0;
             // 
-            // SearchOut
+            // frmSearchOut
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(8F, 16F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.ClientSize = new System.Drawing.Size(800, 450);
             this.Controls.Add(this.dataGridView1);
-            this.Name = "SearchOut";
+            this.Name = "frmSearchOut";
             this.Text = "SearchOut";
+            this.Load += new System.EventHandler(this.SearchOut_Load);
             ((System.ComponentModel.ISupportInitialize)(this.dataGridView1)).EndInit();
             this.ResumeLayout(false);
 

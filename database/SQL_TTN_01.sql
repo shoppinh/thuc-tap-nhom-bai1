@@ -220,11 +220,11 @@ exec searchTNV N'Bùi Doãn Hưng'
 select * from NHANVIEN
 
 ----------------------------------- TIM KIEM Tat ca nhan vien thuoc ten phong ban----------------
-alter procedure searchNVfromTPB @TenPB nvarchar(45)
+create procedure searchNVfromTPB @TenPB nvarchar(45)
 as 
 begin
 	select nv.MaNV, nv.TenNV, convert(varchar(10),nv.NgaySinh,103) 
-	as NgaySinh, nv.DiaChi, nv.GioiTinh, nv.Luong, nv.MaNGS
+	as NgaySinh, nv.DiaChi, nv.GioiTinh, nv.Luong, nv.MaNGS,nv.MaPB
 	from NHANVIEN as nv, PHONGBAN as pb
 	where nv.MaPB = pb.MaPB and pb.TenPB = @TenPB
 end
