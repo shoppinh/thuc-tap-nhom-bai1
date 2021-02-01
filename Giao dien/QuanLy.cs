@@ -13,9 +13,17 @@ namespace Giao_dien
 {
     public partial class frmQuanLy : Form
     {
+        List<string> listItem;
         public frmQuanLy()
         {
             InitializeComponent();
+            addCombobox();
+        }
+
+        public void addCombobox()
+        {
+            listItem = new List<string>() { "Mã Nhân Viên","Tên Nhân Viên","Tên Phòng Ban" };
+            comboTimKiem.DataSource = listItem;
         }
 
         private void btn2Thoat_Click(object sender, EventArgs e)

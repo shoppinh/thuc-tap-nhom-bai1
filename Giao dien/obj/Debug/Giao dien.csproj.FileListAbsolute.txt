@@ -44,3 +44,16 @@ C:\Users\HP\Desktop\GIT\thuc-tap-nhom-bai1\Giao dien\obj\Debug\Giao dien.csproj.
 C:\Users\HP\Desktop\GIT\thuc-tap-nhom-bai1\Giao dien\obj\Debug\Giao dien.csproj.CoreCompileInputs.cache
 C:\Users\HP\Desktop\GIT\thuc-tap-nhom-bai1\Giao dien\obj\Debug\Giao dien.exe
 C:\Users\HP\Desktop\GIT\thuc-tap-nhom-bai1\Giao dien\obj\Debug\Giao dien.pdb
+E:\1 school\1 ki 6\TT NHom\thuc-tap-nhom-bai1\Giao dien\bin\Debug\Giao dien.exe.config
+E:\1 school\1 ki 6\TT NHom\thuc-tap-nhom-bai1\Giao dien\bin\Debug\Giao dien.exe
+E:\1 school\1 ki 6\TT NHom\thuc-tap-nhom-bai1\Giao dien\bin\Debug\Giao dien.pdb
+E:\1 school\1 ki 6\TT NHom\thuc-tap-nhom-bai1\Giao dien\obj\Debug\Giao dien.csprojAssemblyReference.cache
+E:\1 school\1 ki 6\TT NHom\thuc-tap-nhom-bai1\Giao dien\obj\Debug\Giao_dien.frmDangNhap.resources
+E:\1 school\1 ki 6\TT NHom\thuc-tap-nhom-bai1\Giao dien\obj\Debug\Giao_dien.frmThemNV.resources
+E:\1 school\1 ki 6\TT NHom\thuc-tap-nhom-bai1\Giao dien\obj\Debug\Giao_dien.Properties.Resources.resources
+E:\1 school\1 ki 6\TT NHom\thuc-tap-nhom-bai1\Giao dien\obj\Debug\Giao_dien.frmQuanLy.resources
+E:\1 school\1 ki 6\TT NHom\thuc-tap-nhom-bai1\Giao dien\obj\Debug\Giao dien.csproj.GenerateResource.cache
+E:\1 school\1 ki 6\TT NHom\thuc-tap-nhom-bai1\Giao dien\obj\Debug\Giao dien.csproj.CoreCompileInputs.cache
+E:\1 school\1 ki 6\TT NHom\thuc-tap-nhom-bai1\Giao dien\obj\Debug\Giao dien.exe
+E:\1 school\1 ki 6\TT NHom\thuc-tap-nhom-bai1\Giao dien\obj\Debug\Giao dien.pdb
+E:\1 school\1 ki 6\TT NHom\thuc-tap-nhom-bai1\Giao dien\obj\Debug\Giao_dien.SearchOut.resources

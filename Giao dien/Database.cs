@@ -126,5 +126,29 @@ namespace Giao_dien
 
             return check;
         }
+
+        public DataTable SearchData(string sql)
+        {
+            try
+            {
+                conn.Open();
+                //sql = "select * from NHANVIEN";
+                //sql = "exec SelectAllNV";
+
+                cmd = new SqlCommand(sql, conn);
+                dt = new DataTable();
+                dt.Load(cmd.ExecuteReader());
+                return dt;
+            }
+            catch (Exception ex)
+            {
+                MessageBox.Show("Data Loading ERROR: " + ex.Message);
+                return null;
+            }
+            finally
+            {
+                conn.Close();
+            }
+        }
     }
 }
