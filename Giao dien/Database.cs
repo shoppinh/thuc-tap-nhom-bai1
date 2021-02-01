@@ -152,6 +152,10 @@ namespace Giao_dien
                 if (reader.HasRows)
                 {
                     dt.Load(reader);
+                    while (reader.Read())
+                    {
+                        Console.WriteLine("Ten : " + reader["TenNV"]);
+                    }
                     return dt;
                 }
                 else

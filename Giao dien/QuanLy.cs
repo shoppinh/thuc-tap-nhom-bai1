@@ -101,7 +101,7 @@ namespace Giao_dien
                     {                   
                         if (db.SearchData("searchMNV", 0,valueSearch) != null)
                         {
-                            new frmSearchOut();
+                            new frmSearchOut(0,valueSearch);
                         }
                         else
                         {
@@ -112,7 +112,7 @@ namespace Giao_dien
                     {
                         if (db.SearchData("searchTNV", 1, valueSearch) != null)
                         {
-                            new frmSearchOut();
+                            new frmSearchOut(1, valueSearch);
                         }
                         else
                         {
@@ -123,7 +123,7 @@ namespace Giao_dien
                     {
                         if (db.SearchData("searchNVfromTPB", 2, valueSearch) != null)
                         {
-                            new frmSearchOut();
+                            new frmSearchOut(2, valueSearch);
                         }
                         else
                         {
