@@ -51,8 +51,8 @@ namespace Giao_dien
             dataGridView1.Columns["DiaChi"].HeaderText = "Địa Chỉ";
             dataGridView1.Columns["GioiTinh"].HeaderText = "Giới Tính";
             dataGridView1.Columns["Luong"].HeaderText = "Lương";
-            dataGridView1.Columns["MaNGS"].HeaderText = "Mã NGS";
-            dataGridView1.Columns["MaPB"].HeaderText = "Mã PB";
+            dataGridView1.Columns["TenNGS"].HeaderText = "Tên NGS";
+            dataGridView1.Columns["TenPB"].HeaderText = "Tên PB";
         }
 
         private void dataGridView1_CellDoubleClick(object sender, DataGridViewCellEventArgs e)
