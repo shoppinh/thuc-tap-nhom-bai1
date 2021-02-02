@@ -12,35 +12,23 @@ namespace Giao_dien
 {
     public partial class frmSearchOut : Form
     {
-        int keySearch;
-        string valueSearch;
+        string sqlSearch;
         public frmSearchOut()
         {
             InitializeComponent();
         }
 
-        public frmSearchOut(int keysearch1,string value)
+        public frmSearchOut(string sql)
         {
-            InitializeComponent();
-            valueSearch = value;
-            keySearch = keysearch1;
+            sqlSearch = sql;
+            InitializeComponent(); 
         }
+
 
         private void LoadDSNV()
         {
             dvgSearch.DataSource = null;
-            //var db = new Database();
-            if (keySearch == 0)
-            {
-                dvgSearch.DataSource = new Database().SelectData("exec searchMNV '" + valueSearch + "'");
-            }else if (keySearch == 1)
-            {
-                dvgSearch.DataSource = new Database().SelectData("exec searchTNV N'" + valueSearch + "'");
-            }else if (keySearch == 2)
-            {
-                dvgSearch.DataSource = new Database().SelectData("exec searchNVfromTPB N'" + valueSearch + "'");
-            }
-
+            dvgSearch.DataSource = new Database().SelectData(sqlSearch);
             dvgSearch.Columns["MaNV"].HeaderText = "Mã NV";
             dvgSearch.Columns["TenNV"].HeaderText = "Tên NV";
             dvgSearch.Columns["NgaySinh"].HeaderText = "Ngày Sinh";
@@ -51,7 +39,7 @@ namespace Giao_dien
             dvgSearch.Columns["MaPB"].HeaderText = "Mã PB";
         }
 
-        private void SearchOut_Load(object sender, EventArgs e)
+        private void frmSearchOut_Load(object sender, EventArgs e)
         {
             LoadDSNV();
         }

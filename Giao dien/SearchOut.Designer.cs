@@ -36,7 +36,7 @@ namespace Giao_dien
             // dvgSearch
             // 
             this.dvgSearch.ColumnHeadersHeightSizeMode = System.Windows.Forms.DataGridViewColumnHeadersHeightSizeMode.AutoSize;
-            this.dvgSearch.Location = new System.Drawing.Point(52, 54);
+            this.dvgSearch.Location = new System.Drawing.Point(81, 59);
             this.dvgSearch.Name = "dvgSearch";
             this.dvgSearch.RowHeadersWidth = 51;
             this.dvgSearch.RowTemplate.Height = 24;
@@ -50,8 +50,9 @@ namespace Giao_dien
             this.ClientSize = new System.Drawing.Size(800, 450);
             this.Controls.Add(this.dvgSearch);
             this.Name = "frmSearchOut";
+            this.StartPosition = System.Windows.Forms.FormStartPosition.CenterScreen;
             this.Text = "SearchOut";
-            this.Load += new System.EventHandler(this.SearchOut_Load);
+            this.Load += new System.EventHandler(this.frmSearchOut_Load);
             ((System.ComponentModel.ISupportInitialize)(this.dvgSearch)).EndInit();
             this.ResumeLayout(false);
 

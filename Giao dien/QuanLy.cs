@@ -103,11 +103,14 @@ namespace Giao_dien
                 {
                     String valueSearch = txbTimKiem.Text;
                     var db = new Database();
+                    String sql = "";
                     if (comboTimKiem.SelectedIndex == 0)
                     {
-                        if (db.SelectData("exec searchMNV '" + valueSearch + "'") != null)
+                        sql = "exec searchMNV '" + valueSearch + "'";
+                        if (db.SelectData(sql).Rows.Count != 0)
                         {
-                            new frmSearchOut(0, valueSearch);
+                            new  frmSearchOut(sql).Show();
+                          
                         }
                         else
                         {
@@ -116,9 +119,10 @@ namespace Giao_dien
                     }
                     else if (comboTimKiem.SelectedIndex == 1)
                     {
-                        if (db.SelectData("exec searchTNV N'" + valueSearch + "'") != null)
+                        sql = "exec searchTNV N'" + valueSearch + "'";
+                        if (db.SelectData(sql).Rows.Count !=0)
                         {
-                            new frmSearchOut(1, valueSearch);
+                            new frmSearchOut(sql).Show();
                         }
                         else
                         {
@@ -127,9 +131,10 @@ namespace Giao_dien
                     }
                     else if (comboTimKiem.SelectedIndex == 2)
                     {
-                        if (db.SelectData("exec searchNVfromTPB N'" + valueSearch + "'") != null)
+                        sql = "exec searchNVfromTPB N'" + valueSearch + "'";
+                        if (db.SelectData(sql).Rows.Count != 0)
                         {
-                            new frmSearchOut(2, valueSearch);
+                            new frmSearchOut(sql).Show();
                         }
                         else
                         {
