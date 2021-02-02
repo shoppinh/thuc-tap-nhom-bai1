@@ -71,3 +71,5 @@ D:\thuctapnhom\thuc-tap-nhom-bai1\Giao dien\obj\Debug\Giao dien.csproj.CoreCompi
 D:\thuctapnhom\thuc-tap-nhom-bai1\Giao dien\obj\Debug\Giao dien.exe
 D:\thuctapnhom\thuc-tap-nhom-bai1\Giao dien\obj\Debug\Giao dien.pdb
 C:\Users\HP\Desktop\GIT\thuc-tap-nhom-bai1\Giao dien\obj\Debug\Giao_dien.frmSearchOut.resources
+E:\Thực tập nhóm\thuc-tap-nhom-bai1\Giao dien\obj\Debug\Giao_dien.frmThemNV.resources
+E:\Thực tập nhóm\thuc-tap-nhom-bai1\Giao dien\obj\Debug\Giao_dien.frmSearchOut.resources
