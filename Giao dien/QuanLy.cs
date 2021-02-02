@@ -81,6 +81,8 @@ namespace Giao_dien
 
             var db = new Database();
             db.del_data(dataGridView1.CurrentRow.Cells["MaNV"].Value.ToString());
+            // Hien thi mess thong bao
+            MessageBox.Show("Đã xóa nhân viên" + dataGridView1.CurrentRow.Cells["TenNV"].Value.ToString());
             LoadDSNV();
 
         }

@@ -57,3 +57,16 @@ C:\Users\Admin\Source\Repos\thuc-tap-nhom-bai1\Giao dien\obj\Debug\Giao dien.csp
 C:\Users\Admin\Source\Repos\thuc-tap-nhom-bai1\Giao dien\obj\Debug\Giao dien.exe
 C:\Users\Admin\Source\Repos\thuc-tap-nhom-bai1\Giao dien\obj\Debug\Giao dien.pdb
 C:\Users\Admin\source\repos\thuc-tap-nhom-bai1\Giao dien\obj\Debug\Giao_dien.frmSearchOut.resources
+D:\thuctapnhom\thuc-tap-nhom-bai1\Giao dien\bin\Debug\Giao dien.exe.config
+D:\thuctapnhom\thuc-tap-nhom-bai1\Giao dien\bin\Debug\Giao dien.exe
+D:\thuctapnhom\thuc-tap-nhom-bai1\Giao dien\bin\Debug\Giao dien.pdb
+D:\thuctapnhom\thuc-tap-nhom-bai1\Giao dien\obj\Debug\Giao dien.csprojAssemblyReference.cache
+D:\thuctapnhom\thuc-tap-nhom-bai1\Giao dien\obj\Debug\Giao_dien.frmDangNhap.resources
+D:\thuctapnhom\thuc-tap-nhom-bai1\Giao dien\obj\Debug\Giao_dien.frmThemNV.resources
+D:\thuctapnhom\thuc-tap-nhom-bai1\Giao dien\obj\Debug\Giao_dien.Properties.Resources.resources
+D:\thuctapnhom\thuc-tap-nhom-bai1\Giao dien\obj\Debug\Giao_dien.frmQuanLy.resources
+D:\thuctapnhom\thuc-tap-nhom-bai1\Giao dien\obj\Debug\Giao_dien.frmSearchOut.resources
+D:\thuctapnhom\thuc-tap-nhom-bai1\Giao dien\obj\Debug\Giao dien.csproj.GenerateResource.cache
+D:\thuctapnhom\thuc-tap-nhom-bai1\Giao dien\obj\Debug\Giao dien.csproj.CoreCompileInputs.cache
+D:\thuctapnhom\thuc-tap-nhom-bai1\Giao dien\obj\Debug\Giao dien.exe
+D:\thuctapnhom\thuc-tap-nhom-bai1\Giao dien\obj\Debug\Giao dien.pdb
