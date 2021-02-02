@@ -85,11 +85,17 @@ namespace Giao_dien
 
         }
 
+        private void resetValue()
+        {
+            txbTimKiem.Text = "";
+        }
+
         private void btnTimKiem_Click(object sender, EventArgs e)
         {
+
             if (string.IsNullOrEmpty(txbTimKiem.Text))
             {
-                MessageBox.Show("Bạn chưa nhập thông tin tìm kiếm");
+                MessageBox.Show("Bạn chưa nhập thông tin tìm kiếm","Thông báo", MessageBoxButtons.OK, MessageBoxIcon.Warning);
             }
             else
             {
@@ -98,40 +104,95 @@ namespace Giao_dien
                     String valueSearch = txbTimKiem.Text;
                     var db = new Database();
                     if (comboTimKiem.SelectedIndex == 0)
-                    {                   
-                        if (db.SearchData("searchMNV", 0,valueSearch) != null)
+                    {
+                        if (db.SelectData("exec searchMNV '" + valueSearch + "'") != null)
                         {
-                            new frmSearchOut(0,valueSearch);
+                            new frmSearchOut(0, valueSearch);
                         }
                         else
                         {
-                            MessageBox.Show("Không tìm thấy thông tin", "Hello", MessageBoxButtons.YesNoCancel);
+                            MessageBox.Show("Không tìm thấy thông tin", "Thông báo", MessageBoxButtons.OK, MessageBoxIcon.Information);
                         }
                     }
                     else if (comboTimKiem.SelectedIndex == 1)
                     {
-                        if (db.SearchData("searchTNV", 1, valueSearch) != null)
+                        if (db.SelectData("exec searchTNV N'" + valueSearch + "'") != null)
                         {
                             new frmSearchOut(1, valueSearch);
                         }
                         else
                         {
-                            MessageBox.Show("Không tìm thấy thông tin", "Hello", MessageBoxButtons.YesNoCancel);
+                            MessageBox.Show("Không tìm thấy thông tin", "Thông báo", MessageBoxButtons.OK, MessageBoxIcon.Information);
                         }
                     }
                     else if (comboTimKiem.SelectedIndex == 2)
                     {
-                        if (db.SearchData("searchNVfromTPB", 2, valueSearch) != null)
+                        if (db.SelectData("exec searchNVfromTPB N'" + valueSearch + "'") != null)
                         {
                             new frmSearchOut(2, valueSearch);
                         }
                         else
                         {
-                            MessageBox.Show("Không tìm thấy thông tin", "Hello", MessageBoxButtons.YesNoCancel);
+                            MessageBox.Show("Không tìm thấy thông tin", "Thông báo", MessageBoxButtons.OK, MessageBoxIcon.Information);
                         }
                     }
                 }
+                resetValue();
             }
+            
         }
     }
 }
+
+
+
+//string sql;
+//var db = new Database();
+//if (txbTimKiem.Text == "")
+//{
+//    MessageBox.Show("Bạn hãy nhập điều kiện tìm kiếm", "Thông báo", MessageBoxButtons.OK, MessageBoxIcon.Warning);
+//    return;
+//}
+//if (comboTimKiem.SelectedValue != null)
+//{
+//    if (comboTimKiem.SelectedIndex == 0)
+//    {
+//        sql = "SELECT MaNV, TenNV, convert(varchar(10),NgaySinh,103) as NgaySinh, DiaChi, GioiTinh, Luong, MaNGS, MaPB from NHANVIEN WHERE 1=1";
+//        sql += " AND MaNV = " + txbTimKiem.Text;
+//        if (db.getDataToTable(sql).Rows.Count != 0)
+//        {
+//            new frmSearchOut(sql);
+//        }
+//        else
+//        {
+//            MessageBox.Show("Không tìm thấy thông tin", "Thông báo", MessageBoxButtons.YesNoCancel);
+//        }
+//    }
+//    else if (comboTimKiem.SelectedIndex == 1)
+//    {
+//        sql = "SELECT MaNV, TenNV, convert(varchar(10),NgaySinh,103) as NgaySinh, DiaChi, GioiTinh, Luong, MaNGS, MaPB from NHANVIEN WHERE 1=1";
+//        sql += " AND TenNV = " + txbTimKiem.Text;
+//        if (db.getDataToTable(sql).Rows.Count != 0)
+//        {
+//            new frmSearchOut(sql);
+//        }
+//        else
+//        {
+//            MessageBox.Show("Không tìm thấy thông tin", "Thông báo", MessageBoxButtons.YesNoCancel);
+//        }
+//    }
+//    else if (comboTimKiem.SelectedIndex == 2)
+//    {
+//        sql = "select nv.MaNV, nv.TenNV, convert(varchar(10),nv.NgaySinh,103) as NgaySinh, nv.DiaChi, nv.GioiTinh, nv.Luong, nv.MaNGS,nv.MaPB from NHANVIEN as nv, PHONGBAN as pb WHERE 1=1";
+//        sql += " AND nv.MaPB = pb.MaPB AND pb.TenPB = " + txbTimKiem.Text;
+//        if (db.getDataToTable(sql).Rows.Count != 0)
+//        {
+//            new frmSearchOut(sql);
+//        }
+//        else
+//        {
+//            MessageBox.Show("Không tìm thấy thông tin", "Thông báo", MessageBoxButtons.YesNoCancel);
+//        }
+//    }
+
+//}

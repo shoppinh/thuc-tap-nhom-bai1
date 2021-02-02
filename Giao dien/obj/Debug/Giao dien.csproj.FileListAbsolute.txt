@@ -56,3 +56,4 @@ C:\Users\Admin\Source\Repos\thuc-tap-nhom-bai1\Giao dien\obj\Debug\Giao dien.csp
 C:\Users\Admin\Source\Repos\thuc-tap-nhom-bai1\Giao dien\obj\Debug\Giao dien.csproj.CoreCompileInputs.cache
 C:\Users\Admin\Source\Repos\thuc-tap-nhom-bai1\Giao dien\obj\Debug\Giao dien.exe
 C:\Users\Admin\Source\Repos\thuc-tap-nhom-bai1\Giao dien\obj\Debug\Giao dien.pdb
+C:\Users\Admin\source\repos\thuc-tap-nhom-bai1\Giao dien\obj\Debug\Giao_dien.frmSearchOut.resources
