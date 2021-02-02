@@ -176,5 +176,18 @@ namespace Giao_dien
                 conn.Close();
             }
         }
+
+        //public DataTable getDataToTable(string sql)
+        //{
+        //    conn.Open();
+        //    SqlDataAdapter dap = new SqlDataAdapter();
+        //    dap.SelectCommand = new SqlCommand();
+        //    dap.SelectCommand.Connection = conn;
+        //    dap.SelectCommand.CommandText = sql;
+        //    dt = new DataTable();
+        //    dap.Fill(dt);
+        //    return dt;
+        //}
     }
+
 }

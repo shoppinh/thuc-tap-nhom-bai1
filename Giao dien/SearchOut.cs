@@ -12,63 +12,44 @@ namespace Giao_dien
 {
     public partial class frmSearchOut : Form
     {
-        int searchKey;
-        string searchValueString;
+        int keySearch;
+        string valueSearch;
         public frmSearchOut()
         {
             InitializeComponent();
         }
 
-        public frmSearchOut(int key,string value)
+        public frmSearchOut(int keysearch1,string value)
         {
             InitializeComponent();
-            searchKey = key;
-            searchValueString = value;
-            Console.WriteLine(searchKey);
-            Console.WriteLine(searchValueString);
+            valueSearch = value;
+            keySearch = keysearch1;
         }
 
         private void LoadDSNV()
         {
-            dataGridView1.DataSource = null;
-            var db = new Database();
-            if (searchKey == 0)
+            dvgSearch.DataSource = null;
+            //var db = new Database();
+            if (keySearch == 0)
             {
-                dataGridView1.DataSource = db.SearchData("searchMNV", searchKey, searchValueString);
-            }else if (searchKey == 1)
+                dvgSearch.DataSource = new Database().SelectData("exec searchMNV '" + valueSearch + "'");
+            }else if (keySearch == 1)
             {
-                dataGridView1.DataSource = db.SearchData("searchTNV", searchKey, searchValueString);
-            }else if (searchKey == 2)
+                dvgSearch.DataSource = new Database().SelectData("exec searchTNV N'" + valueSearch + "'");
+            }else if (keySearch == 2)
             {
-                dataGridView1.DataSource = db.SearchData("searchNVfromTPB", searchKey, searchValueString);
+                dvgSearch.DataSource = new Database().SelectData("exec searchNVfromTPB N'" + valueSearch + "'");
             }
-            
 
-            dataGridView1.Columns["MaNV"].HeaderText = "Mã NV";
-            dataGridView1.Columns["TenNV"].HeaderText = "Tên NV";
-            dataGridView1.Columns["NgaySinh"].HeaderText = "Ngày Sinh";
-            dataGridView1.Columns["DiaChi"].HeaderText = "Địa Chỉ";
-            dataGridView1.Columns["GioiTinh"].HeaderText = "Giới Tính";
-            dataGridView1.Columns["Luong"].HeaderText = "Lương";
-            dataGridView1.Columns["MaNGS"].HeaderText = "Mã NGS";
-            dataGridView1.Columns["MaPB"].HeaderText = "Mã PB";
+            dvgSearch.Columns["MaNV"].HeaderText = "Mã NV";
+            dvgSearch.Columns["TenNV"].HeaderText = "Tên NV";
+            dvgSearch.Columns["NgaySinh"].HeaderText = "Ngày Sinh";
+            dvgSearch.Columns["DiaChi"].HeaderText = "Địa Chỉ";
+            dvgSearch.Columns["GioiTinh"].HeaderText = "Giới Tính";
+            dvgSearch.Columns["Luong"].HeaderText = "Lương";
+            dvgSearch.Columns["MaNGS"].HeaderText = "Mã NGS";
+            dvgSearch.Columns["MaPB"].HeaderText = "Mã PB";
         }
-
-        //private void LoadDSNV()
-        //{
-        //    dataGridView1.DataSource = null;
-        //    //var db = new Database();
-        //    dataGridView1.DataSource = new Database().SelectData("exec SelectAllNV");
-
-        //    dataGridView1.Columns["MaNV"].HeaderText = "Mã NV";
-        //    dataGridView1.Columns["TenNV"].HeaderText = "Tên NV";
-        //    dataGridView1.Columns["NgaySinh"].HeaderText = "Ngày Sinh";
-        //    dataGridView1.Columns["DiaChi"].HeaderText = "Địa Chỉ";
-        //    dataGridView1.Columns["GioiTinh"].HeaderText = "Giới Tính";
-        //    dataGridView1.Columns["Luong"].HeaderText = "Lương";
-        //    dataGridView1.Columns["MaNGS"].HeaderText = "Mã NGS";
-        //    dataGridView1.Columns["MaPB"].HeaderText = "Mã PB";
-        //}
 
         private void SearchOut_Load(object sender, EventArgs e)
         {

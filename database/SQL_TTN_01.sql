@@ -230,7 +230,7 @@ begin
 end
 
 ----------------------------------------------
-exec searchNVfromTPB 'Tài Chính'
+exec searchNVfromTPB N'Tài Chính'
 
 
 
