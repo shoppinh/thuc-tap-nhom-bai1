@@ -41,12 +41,12 @@ namespace Giao_dien
             this.label5 = new System.Windows.Forms.Label();
             this.label6 = new System.Windows.Forms.Label();
             this.label7 = new System.Windows.Forms.Label();
-            this.mtbNS = new System.Windows.Forms.MaskedTextBox();
             this.label8 = new System.Windows.Forms.Label();
             this.rbtNu = new System.Windows.Forms.RadioButton();
             this.btnCancel = new System.Windows.Forms.Button();
             this.cbTenNGS = new System.Windows.Forms.ComboBox();
             this.cbTenPB = new System.Windows.Forms.ComboBox();
+            this.dtpBirthday = new System.Windows.Forms.DateTimePicker();
             this.SuspendLayout();
             // 
             // label1
@@ -167,16 +167,6 @@ namespace Giao_dien
             this.label7.TabIndex = 15;
             this.label7.Text = "Ngày Sinh";
             // 
-            // mtbNS
-            // 
-            this.mtbNS.Location = new System.Drawing.Point(233, 174);
-            this.mtbNS.Margin = new System.Windows.Forms.Padding(4);
-            this.mtbNS.Mask = "00/00/0000";
-            this.mtbNS.Name = "mtbNS";
-            this.mtbNS.Size = new System.Drawing.Size(295, 22);
-            this.mtbNS.TabIndex = 16;
-            this.mtbNS.ValidatingType = typeof(System.DateTime);
-            // 
             // label8
             // 
             this.label8.AutoSize = true;
@@ -209,33 +199,40 @@ namespace Giao_dien
             this.btnCancel.UseVisualStyleBackColor = true;
             this.btnCancel.Click += new System.EventHandler(this.btnCancel_Click);
             // 
-            // cbMaNGS
+            // cbTenNGS
             // 
             this.cbTenNGS.FormattingEnabled = true;
             this.cbTenNGS.Location = new System.Drawing.Point(233, 412);
-            this.cbTenNGS.Name = "cbMaNGS";
+            this.cbTenNGS.Name = "cbTenNGS";
             this.cbTenNGS.Size = new System.Drawing.Size(295, 24);
             this.cbTenNGS.TabIndex = 20;
             // 
-            // cbMaPB
+            // cbTenPB
             // 
             this.cbTenPB.FormattingEnabled = true;
             this.cbTenPB.Location = new System.Drawing.Point(233, 469);
-            this.cbTenPB.Name = "cbMaPB";
+            this.cbTenPB.Name = "cbTenPB";
             this.cbTenPB.Size = new System.Drawing.Size(295, 24);
             this.cbTenPB.TabIndex = 21;
+            // 
+            // dtpBirthday
+            // 
+            this.dtpBirthday.Location = new System.Drawing.Point(233, 172);
+            this.dtpBirthday.Name = "dtpBirthday";
+            this.dtpBirthday.Size = new System.Drawing.Size(295, 22);
+            this.dtpBirthday.TabIndex = 22;
             // 
             // frmThemNV
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(8F, 16F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.ClientSize = new System.Drawing.Size(623, 646);
+            this.Controls.Add(this.dtpBirthday);
             this.Controls.Add(this.cbTenPB);
             this.Controls.Add(this.cbTenNGS);
             this.Controls.Add(this.btnCancel);
             this.Controls.Add(this.rbtNu);
             this.Controls.Add(this.label8);
-            this.Controls.Add(this.mtbNS);
             this.Controls.Add(this.label7);
             this.Controls.Add(this.label6);
             this.Controls.Add(this.label5);
@@ -272,11 +269,11 @@ namespace Giao_dien
         private System.Windows.Forms.Label label5;
         private System.Windows.Forms.Label label6;
         private System.Windows.Forms.Label label7;
-        private System.Windows.Forms.MaskedTextBox mtbNS;
         private System.Windows.Forms.Label label8;
         private System.Windows.Forms.RadioButton rbtNu;
         private System.Windows.Forms.Button btnCancel;
         private System.Windows.Forms.ComboBox cbTenNGS;
         private System.Windows.Forms.ComboBox cbTenPB;
+        private System.Windows.Forms.DateTimePicker dtpBirthday;
     }
 }

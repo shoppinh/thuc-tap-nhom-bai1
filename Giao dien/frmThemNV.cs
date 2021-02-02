@@ -48,7 +48,8 @@ namespace Giao_dien
                 //MessageBox.Show(r[0].ToString());
 
                 txtTenNV.Text = r["TenNV"].ToString();
-                mtbNS.Text = r["NgaySinh"].ToString();
+                //mtbNS.Text = r["NgaySinh"].ToString();
+                dtpBirthday.Value = DateTime.ParseExact(r["NgaySinh"].ToString(), "dd/MM/yyyy", CultureInfo.InvariantCulture);
                 txtDC.Text = r["DiaChi"].ToString();
                 if (r["GioiTinh"].ToString() == "Nam")
                 {
@@ -74,17 +75,17 @@ namespace Giao_dien
         {
             string sql;
             string TenNV = txtTenNV.Text;
-            DateTime NgaySinh;
-            try
-            {
-                NgaySinh = DateTime.ParseExact(mtbNS.Text, "dd/MM/yyyy", CultureInfo.InvariantCulture);
-            }
-            catch (Exception)
-            {
-                MessageBox.Show("Ngày sinh không hợp lệ!");
-                mtbNS.Select();
-                return;
-            }
+            DateTime NgaySinh = dtpBirthday.Value;
+            //try
+            //{
+                //NgaySinh = DateTime.ParseExact(mtbNS.Text, "dd/MM/yyyy", CultureInfo.InvariantCulture);
+            //}
+            //catch (Exception)
+            //{
+            //    MessageBox.Show("Ngày sinh không hợp lệ!");
+            //    //mtbNS.Select();
+            //    return;
+            //}
             string DiaChi = txtDC.Text;
             string GioiTinh = rbtNam.Checked ? "Nam" : "Nu";
             string Luong = txtLuong.Text;
