@@ -13,22 +13,22 @@ namespace Giao_dien
 {
     public partial class frmQuanLy : Form
     {
+        List<string> listItem;
         public frmQuanLy()
         {
             InitializeComponent();
+            addCombobox();
+        }
+
+        public void addCombobox()
+        {
+            listItem = new List<string>() { "Mã Nhân Viên","Tên Nhân Viên","Tên Phòng Ban" };
+            comboTimKiem.DataSource = listItem;
         }
 
         private void btn2Thoat_Click(object sender, EventArgs e)
         {
             this.Close();
-        }
-
-        private void txbTimKiem_KeyPress(object sender, KeyPressEventArgs e)
-        {
-            if (e.KeyChar == 13)
-            {
-                // Cái này sẽ bắt phím enter khi đã nhập thông tin tìm kiếm
-            }
         }
 
         private void frmQuanLy_Load(object sender, EventArgs e)
@@ -83,6 +83,55 @@ namespace Giao_dien
             db.del_data(dataGridView1.CurrentRow.Cells["MaNV"].Value.ToString());
             LoadDSNV();
 
+        }
+
+        private void btnTimKiem_Click(object sender, EventArgs e)
+        {
+            if (string.IsNullOrEmpty(txbTimKiem.Text))
+            {
+                MessageBox.Show("Bạn chưa nhập thông tin tìm kiếm");
+            }
+            else
+            {
+                if (comboTimKiem.SelectedValue != null)
+                {
+                    String valueSearch = txbTimKiem.Text;
+                    var db = new Database();
+                    if (comboTimKiem.SelectedIndex == 0)
+                    {                   
+                        if (db.SearchData("searchMNV", 0,valueSearch) != null)
+                        {
+                            new frmSearchOut(0,valueSearch);
+                        }
+                        else
+                        {
+                            MessageBox.Show("Không tìm thấy thông tin", "Hello", MessageBoxButtons.YesNoCancel);
+                        }
+                    }
+                    else if (comboTimKiem.SelectedIndex == 1)
+                    {
+                        if (db.SearchData("searchTNV", 1, valueSearch) != null)
+                        {
+                            new frmSearchOut(1, valueSearch);
+                        }
+                        else
+                        {
+                            MessageBox.Show("Không tìm thấy thông tin", "Hello", MessageBoxButtons.YesNoCancel);
+                        }
+                    }
+                    else if (comboTimKiem.SelectedIndex == 2)
+                    {
+                        if (db.SearchData("searchNVfromTPB", 2, valueSearch) != null)
+                        {
+                            new frmSearchOut(2, valueSearch);
+                        }
+                        else
+                        {
+                            MessageBox.Show("Không tìm thấy thông tin", "Hello", MessageBoxButtons.YesNoCancel);
+                        }
+                    }
+                }
+            }
         }
     }
 }

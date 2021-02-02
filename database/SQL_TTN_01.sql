@@ -180,3 +180,60 @@ end
 ---------------------------------------------
 
 exec selectNV '17KS1001'
+
+
+----------------------------------- TIM KIEM THEO MA NV----------------
+create procedure searchMNV @MaNV char(10)
+as 
+begin
+	select MaNV, TenNV, convert(varchar(10),NgaySinh,103) 
+	as NgaySinh, DiaChi, GioiTinh, Luong, MaNGS, MaPB 
+	from NHANVIEN
+	where MaNV = @MaNV
+end
+
+----------------------------------------------
+exec searchMNV '17KS1001'
+
+
+
+
+select * from NHANVIEN
+
+
+----------------------------------- TIM KIEM THEO Ten NV----------------
+create procedure searchTNV @TenNV nvarchar(45)
+as 
+begin
+	select MaNV, TenNV, convert(varchar(10),NgaySinh,103) 
+	as NgaySinh, DiaChi, GioiTinh, Luong, MaNGS, MaPB 
+	from NHANVIEN
+	where TenNV = @TenNV
+end
+
+----------------------------------------------
+exec searchTNV N'Bùi Doãn Hưng'
+
+
+
+
+select * from NHANVIEN
+
+----------------------------------- TIM KIEM Tat ca nhan vien thuoc ten phong ban----------------
+create procedure searchNVfromTPB @TenPB nvarchar(45)
+as 
+begin
+	select nv.MaNV, nv.TenNV, convert(varchar(10),nv.NgaySinh,103) 
+	as NgaySinh, nv.DiaChi, nv.GioiTinh, nv.Luong, nv.MaNGS,nv.MaPB
+	from NHANVIEN as nv, PHONGBAN as pb
+	where nv.MaPB = pb.MaPB and pb.TenPB = @TenPB
+end
+
+----------------------------------------------
+exec searchNVfromTPB 'Tài Chính'
+
+
+
+
+select * from NHANVIEN
+select * from PHONGBAN
